@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda & Eduardo - Nosso Grande Dia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos baseados na temática floral de tons quentes/terrosos (laranja queimado, marrom, creme) */
+        :root {
+            --cor-principal: #6e4e40; /* Marrom escuro/Grafite para texto principal */
+            --cor-secundaria: #b5651d; /* Laranja Queimado para destaque */
+            --cor-fundo: #fbfbf7; /* Creme/Off-White */
+            --cor-texto-claro: #9d9d9d; /* Cinza claro para subtítulos/detalhes */
+            --cor-borda: #dcdcdc; /* Borda suave */
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--cor-principal);
+            background-color: var(--cor-fundo);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 100px 20px 50px;
+            background-color: var(--cor-fundo);
+            border-bottom: 2px solid var(--cor-borda);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 4em;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .hero span {
+            font-family: var(--font-display);
+            font-size: 2.5em;
+            color: var(--cor-secundaria);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: var(--cor-texto-claro);
+            margin-top: 10px;
+        }
+
+        /* Seção principal do Conteúdo */
+        .content-section {
+            padding: 50px 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid var(--cor-borda);
+        }
+
+        .content-section h2 {
+            font-family: var(--font-display);
+            font-size: 2.5em;
+            color: var(--cor-secundaria);
+            margin-bottom: 20px;
+            border-bottom: 2px dashed var(--cor-texto-claro);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .details-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .detail-box {
+            background-color: #fff;
+            border: 1px solid var(--cor-borda);
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 45%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 5px;
+        }
+
+        .detail-box h3 {
+            color: var(--cor-principal);
+            font-size: 1.4em;
+            margin-top: 0;
+        }
+
+        .detail-box a {
+            color: var(--cor-secundaria);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .detail-box a:hover {
+            text-decoration: underline;
+        }
+
+        .list-info {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .list-info li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para sugestões de alimentação */
+        .food-suggestion {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid var(--cor-secundaria);
+            background-color: #fff;
+            border-radius: 3px;
+            text-align: left;
+        }
+        
+        .food-suggestion h3 {
+            margin-top: 0;
+            color: var(--cor-secundaria);
+        }
+        
+        .food-suggestion ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.9em;
+        }
+        
+        .food-suggestion ul li {
+            margin-bottom: 5px;
+        }
+        
+        .food-suggestion .label {
+            font-weight: 600;
+        }
+
+        /* Estilo para links de mapas e contato */
+        .map-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: var(--cor-secundaria);
+            color: #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .map-link:hover {
+            background-color: var(--cor-principal);
+        }
+
+        /* Media Queries para responsividade */
+        @media (max-width: 600px) {
+            header {
+                padding: 50px 10px 30px;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .hero span {
+                font-size: 1.8em;
+            }
+
+            .content-section {
+                padding: 30px 10px;
+            }
+
+            .details-grid {
+                flex-direction: column;
+            }
+
+            .detail-box {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <p>Bem-vindas e bem-vindos,</p>
+        <p>Hoje, escrevemos juntos mais um capítulo de nossa história.</p>
+        <h1>Amanda <span>&</span> Eduardo</h1>
+        <p>Buíque, 15 de novembro de 2025.</p>
+    </header>
+
+    <main>
+        <section id="eventos" class="content-section">
+            <h2>Detalhes do Nosso Grande Dia</h2>
+
+            <div class="details-grid">
+                
+                <div class="detail-box">
+                    <h3>Cerimônia Religiosa</h3>
+                    <p><strong>Data:</strong> 15 de novembro de 2025</p>
+                    <p><strong>Horário:</strong> 10h30</p>
+                    <p><strong>Local:</strong> IGREJA MATRIZ - Paróquia São Félix de Cantalice</p>
+                    <p><strong>Endereço:</strong> Praça Major França, 111, Centro, Buíque/PE</p>
+                    <a href="https://maps.app.goo.gl/jRtL1VKLSETqStCK9?g_st=ipc" class="map-link" target="_blank">Ver no Mapa</a>
+                </div>
+
+                <div class="detail-box">
+                    <h3>Recepção (Buffet)</h3>
+                    <p><strong>Data:</strong> 15 de novembro de 2025</p>
+                    <p><strong>Horário:</strong> 12h30</p>
+                    <p><strong>Local:</strong> Chácara Olho d’ Água</p>
+                    <p>*(Conhecida também por “Chácara de Maciel Batateira”)*</p>
+                    <p>Localizada a 1 km do centro de BUÍQUE, ao lado da estrada para o Povoado Riachão.</p>
+                    <a href="https://maps.app.goo.gl/C7HAxj4aYEzygLmY8?g_st=ipc" class="map-link" target="_blank">Ver Local da Recepção</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="estadia" class="content-section">
+            <h2>Hospedagem e Indicações Locais</h2>
+
+            <div class="detail-box" style="flex: 1 1 100%; margin: 10px 0; text-align: center;">
+                <h3>Hotel Sugerido</h3>
+                <p>A maioria dos convidados estará hospedada(o) no:</p>
+                <p><strong>Hotel Santos</strong></p>
+                <p>Av. Dra. Aurora Laerte Cavalcanti, 320, Centro, Buíque-PE</p>
+                <ul class="list-info" style="text-align: center;">
+                    <li><span class="label">Whatsapp:</span> 8799912422</li>
+                    <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/hotelsantosbuique" target="_blank">@hotelsantosbuique</a></li>
+                    <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/21DmopTHwsM33cES8?g_st=ipc" target="_blank">Ver Hotel</a></li>
+                </ul>
+                <p style="font-size: 0.9em; color: var(--cor-secundaria);">*O hotel disponibiliza apenas o café da manhã.</p>
+            </div>
+            
+            <br>
+            
+            <div style="text-align: left;">
+                <h3>Sugestões para Almoço e Jantar</h3>
+                
+                <h4>Opções de Almoço:</h4>
+                <div class="food-suggestion">
+                    <h3>01. D’canto Bar & Restaurante</h3>
+                    <p>Rua Cleto Campêlo, 127, Centro, Buíque/PE (Realizam delivery)</p>
+                    <ul>
+                        <li><span class="label">Whatsapp:</span> 87988681098 / 87998255988</li>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/dcanto.bar14" target="_blank">@dcanto.bar14</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/4xACRqnbkFruFam98?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+                
+                <div class="food-suggestion">
+                    <h3>02. Candeeiros Bar e Restaurante</h3>
+                    <p>Servem almoço self-service, petiscos e pratos individuais.</p>
+                    <p>Rua Dr. Manoel Borba, 112-166, Buíque/PE</p>
+                    <ul>
+                        <li><span class="label">Whatsapp:</span> 87999414117</li>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/barcandeeiros" target="_blank">@barcandeeiros</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/WhUQtXCxP3oinpQVA?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+
+                <h4>Opções de Jantar:</h4>
+                <div class="food-suggestion">
+                    <h3>01. D’canto Bar & Restaurante</h3>
+                    <p>Rua Cleto Campêlo, 127, Centro, Buíque/PE (Realizam delivery)</p>
+                    <ul>
+                        <li><span class="label">Whatsapp:</span> 87988681098 / 87998255988</li>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/dcanto.bar14" target="_blank">@dcanto.bar14</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/4xACRqnbkFruFam98?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+
+		<div class="food-suggestion">
+                    <h3>02. Candeeiros Bar e Restaurante</h3>
+                    <p>Servem almoço self-service, petiscos e pratos individuais.</p>
+                    <p>Rua Dr. Manoel Borba, 112-166, Buíque/PE</p>
+                    <ul>
+                        <li><span class="label">Whatsapp:</span> 87999414117</li>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/barcandeeiros" target="_blank">@barcandeeiros</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/WhUQtXCxP3oinpQVA?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+
+		<div class="food-suggestion">
+                    <h3>03. Pizzaria e Lanchonete Tavares</h3>
+                    <p>Servem pizzas, hambúrgueres, massas e petiscos. (Preparam saborosos hambúrgueres artesanais.)</p>
+                    <p>Av. Jonas Camelo, 44 - Centro, Buíque/PE (Realizam delivery)</p>
+                    <ul>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/lanchonetetavares" target="_blank">@lanchonetetavares</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/JquMq9PeVSGPrXi96?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+                
+                <div class="food-suggestion">
+                    <h3>04. Pizzaria D’ Amore</h3>
+                    <p>Servem pizzas em geral. (Ao lado do banco do Brasil)</p>
+                    <p>Buíque, Pernambuco, Brazil 56520000 (Realizam delivery)</p>
+                    <ul>
+                        <li><span class="label">Whatsapp:</span> 87999527913</li>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/pizzariadamore" target="_blank">@pizzariadamore</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/ZqdYWcWgqqsA2eQ1A?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+
+                <div class="food-suggestion">
+                    <h3>05. Seu Carrin</h3>
+                    <p>Servem espetinhos, petiscos, hambúrgueres e bebidas.</p>
+                    <p>Rua Amélia Cavalcanti, 77 - Centro, Buíque/PE (Realizam delivery)</p>
+                    <ul>
+                        <li><span class="label">Instagram:</span> <a href="https://www.instagram.com/seucarrin" target="_blank">@seucarrin</a></li>
+                        <li><span class="label">Google Maps:</span> <a href="https://maps.app.goo.gl/Sp7y8nKRMKdGgTHB9?g_st=ipc" target="_blank">Ver Local</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        </main>
+
+    <footer style="padding: 20px; background-color: var(--cor-principal); color: #fff; font-size: 0.8em;">
+        <p>&copy; 2025 Amanda & Eduardo. Malha Digital. (Template criado por Gemini)</p>
+    </footer>
+
+</body>
+</html>
